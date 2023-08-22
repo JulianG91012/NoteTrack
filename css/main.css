@@ -1,15 +1,15 @@
-html, body {
+*{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-
-
+/* 
 .seccion {
     border: 1px solid black;
     width: 320px;    
     height: 600px;
     box-sizing: border-box;
-}
+} */
 
 .ocultar {
     display: none;
