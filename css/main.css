@@ -3,6 +3,18 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --azul: #1F90FF;
+    --fucsia: #CC18AE;
+    --morado: #8466CC;
+    --verde_lima: #58C796;
+    --verde: #12E087;
+    --black: #282828;
+    --white: #E8E8E8;
+    --naranja: #F29B38;
+    --gris: #CDC3C7;
+    --rojo: #FF4242;
+}
 /* 
 .seccion {
     border: 1px solid black;
@@ -11,6 +23,6 @@
     box-sizing: border-box;
 } */
 
-.ocultar {
+.hide {
     display: none;
 }
