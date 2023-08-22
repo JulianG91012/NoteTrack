@@ -1,4 +1,3 @@
-
 :root{
     --azul: #1F90FF;
     --fucsia: #CC18AE;
@@ -81,6 +80,8 @@ font-weight: 800;
 .welcome-subtitle{
     color: var(--gris_oscuro);
     font-weight: 500;
+    font-size: var(--txt-md);
+    font-stretch: condensed;
 }
 .presentation-banner img{
     width: 100%;
@@ -102,4 +103,5 @@ font-weight: 800;
     height: 40%;
     border-radius: 5%;
     padding: 5%;
+    margin-bottom: 10%;
 }
