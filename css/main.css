@@ -72,8 +72,6 @@ nav{
     grid-template-columns: 3fr 1fr;
 
 }
-.text-presentation-banner{
-}
 .say-hello-title{
 font-size: var(--txt-lg);
 margin-top: 5px;
