@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #282828;
+  font-weight: 300;
+}
+
+body {
+  background-color: #E8E8E8;
+}
+
+.neumorph-effect {
+  box-shadow: 13px 13px 28px #A7A7A7, -13px -13px 28px #ffffff;
+}
+
+.hide {
+  display: none;
+}
+
+/* Nav section */
+nav {
+  background-color: #282828;
+  position: fixed;
+  width: 90%;
+  height: 10%;
+  margin-left: 5%;
+  bottom: 5%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+nav .icon-non-active {
+  stroke: #E8E8E8;
+}
+nav .icon-active {
+  stroke: #12E087;
+}
+
+/* Main Section */
+.main-section {
+  width: 100%;
+  height: 100vh;
+  padding: 10%;
+  box-sizing: border-box;
+}
+.main-section .presentation-banner {
+  width: 100%;
+  height: 15%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.main-section .presentation-banner .say-hello-title {
+  font-size: 35px;
+  margin-top: 5px;
+  font-weight: 800;
+}
+.main-section .presentation-banner .welcome-subtitle {
+  color: #474747;
+  font-weight: 500;
+  font-size: 25px;
+  font-stretch: condensed;
+}
+.main-section .presentation-banner img {
+  width: 100%;
+  height: 110%;
+  border-radius: 10px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  object-fit: cover;
+}
+.main-section .main-graphs-widget {
+  margin-top: 20%;
+  border-radius: 5%;
+  padding: 5%;
+}
+.main-section .main-calendar-widget {
+  margin-top: 10%;
+  border-radius: 5%;
+  padding: 5%;
+  margin-bottom: 10%;
+}
+
+/*# sourceMappingURL=/main.fb6bbcaf.css.map */
