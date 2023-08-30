@@ -42,9 +42,9 @@ nav .icon-active {
 /* Main Section */
 .main-section {
   width: 100%;
-  height: 100vh;
-  padding: 10%;
+  padding: 10% 5%;
   box-sizing: border-box;
+  height: 100%;
 }
 .main-section .presentation-banner {
   width: 100%;
@@ -107,11 +107,88 @@ nav .icon-active {
   font-weight: 700;
   margin-bottom: -10px;
 }
+.main-section .main-graphs-widget .main-widgets-graph {
+  background-color: #CDC3C7;
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+.main-section .main-graphs-widget .main-widget-btns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.main-section .main-graphs-widget .main-widget-btns .main-widget-btn {
+  background-color: #E8E8E8;
+  border: none;
+  padding: 5% 10%;
+  border-radius: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.main-section .main-graphs-widget .main-widget-btns .main-widget-btn:nth-child(1) {
+  color: #F29B38;
+}
 .main-section .main-calendar-widget {
   margin-top: 10%;
-  border-radius: 5%;
+  border-radius: 20px;
   padding: 5%;
   margin-bottom: 10%;
+}
+.main-section .main-calendar-widget .calendar-widget-header {
+  display: flex;
+}
+.main-section .main-calendar-widget .calendar-widget-header .calendar-btn {
+  background-color: #E8E8E8;
+  border: none;
+  padding: 1% 2%;
+  border-radius: 15px;
+  font-weight: 500;
+  stroke: #1F90FF;
+  cursor: pointer;
+  margin-right: 5%;
+}
+.main-section .main-calendar-widget .calendar-widget-text {
+  display: flex;
+  flex-direction: column;
+}
+.main-section .main-calendar-widget .calendar-widget-text span:nth-child(1) {
+  font-weight: 600;
+  margin-bottom: -5px;
+  margin-top: 5px;
+}
+.main-section .main-calendar-widget .calendar-widget-list {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.main-section .main-calendar-widget .calendar-widget-list div ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-section .main-calendar-widget .calendar-widget-list div ul li {
+  margin: 10px 0px;
+}
+.main-section .main-calendar-widget .calendar-widget-list .calendar-widget-subjects ul li, .main-section .main-calendar-widget .calendar-widget-list .calendar-widget-subjects-notes ul li {
+  display: flex;
+  flex-direction: column;
+}
+.main-section .main-calendar-widget .calendar-widget-list .calendar-widget-subjects ul li span:nth-child(1), .main-section .main-calendar-widget .calendar-widget-list .calendar-widget-subjects-notes ul li span:nth-child(1) {
+  font-weight: 700;
+  font-size: 17px;
+}
+.main-section .main-calendar-widget .calendar-widget-list .calendar-widget-subjects ul li span:nth-child(2), .main-section .main-calendar-widget .calendar-widget-list .calendar-widget-subjects-notes ul li span:nth-child(2) {
+  font-size: 15px;
+  margin-top: -5px;
+}
+.main-section .main-calendar-widget .calendar-widget-list .calendar-widget-subjects ul li .calendar-widget-note, .main-section .main-calendar-widget .calendar-widget-list .calendar-widget-subjects-notes ul li .calendar-widget-note {
+  font-size: 25px !important;
+  color: #8466CC;
 }
 
 /*# sourceMappingURL=/main.fb6bbcaf.css.map */
