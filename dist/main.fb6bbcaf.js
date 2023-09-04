@@ -190,20 +190,33 @@ var _modulos = require("./modulos.js");
 require("../style/main.scss");
 //console.log("Hola mundo desde parcel")
 
-var mainSection = document.getElementById("main-section");
-var header = document.getElementById("presentation-banner");
-var graphs = document.getElementById("main-graphs-widget");
+var mainSection = document.querySelector(".main-section");
+var graphs = document.querySelector(".main-graphs-widget");
+var calendar = document.querySelector(".main-calendar-widget");
+var subjects = document.querySelector(".subjects-section");
+var subjectDetail = document.querySelector(".subject-detail-section");
+var settings = document.querySelector(".settings-section");
+
+// toggleAllSections();
+
 window.onload = function () {
-  setTimeout(function () {
-    toggleAllSections();
-  }, 5000);
+  startPage();
 };
+function startPage() {
+  // toggleAllSections();
+  console.log("1");
+  setTimeout(toggleAllSections, 1000);
+}
 function toggleAllSections() {
   mainSection.classList.toggle("hide");
-  header.classList.toggle("hide");
+  settings.classList.toggle("hide");
   graphs.classList.toggle("hide");
+  calendar.classList.toggle("hide");
+  subjects.classList.toggle("hide");
+  subjectDetail.classList.toggle("hide");
+  settings.classList.toggle("hide");
 }
-header.addEventListener("click", function () {
+specialButton.addEventListener("click", function () {
   toggleAllSections();
   //header.classList.add("hidden");
 });
