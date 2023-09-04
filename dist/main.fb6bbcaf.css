@@ -140,7 +140,7 @@ nav .icon-active {
 .main-section .main-calendar-widget .calendar-widget-header {
   display: flex;
 }
-.main-section .main-calendar-widget .calendar-widget-header .calendar-btn {
+.main-section .main-calendar-widget .calendar-widget-header .main-widget-btn {
   background-color: #E8E8E8;
   border: none;
   padding: 1% 2%;
@@ -189,6 +189,46 @@ nav .icon-active {
 .main-section .main-calendar-widget .calendar-widget-list .calendar-widget-subjects ul li .calendar-widget-note, .main-section .main-calendar-widget .calendar-widget-list .calendar-widget-subjects-notes ul li .calendar-widget-note {
   font-size: 25px !important;
   color: #8466CC;
+}
+
+/* Subjects Section */
+.subjects-section {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+}
+.subjects-section .header-banner {
+  display: flex;
+  justify-content: space-between;
+}
+.subjects-section .header-banner .main-widget-btn {
+  background-color: #E8E8E8;
+  border: none;
+  padding: 0.5% 1%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.subjects-section .subjects-zone {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.subjects-section .subjects-zone ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+.subjects-section .subjects-zone .subjects-list li {
+  background-color: red;
+  padding: 5%;
+  height: 100%;
+}
+
+.title {
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=/main.fb6bbcaf.css.map */
