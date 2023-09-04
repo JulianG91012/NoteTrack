@@ -15,7 +15,7 @@ body {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 /* Nav section */
