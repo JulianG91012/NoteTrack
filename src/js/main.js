@@ -1,5 +1,3 @@
-//console.log("Hola mundo desde parcel")
-import { saludar } from "./modulos.js";
 import "../style/main.scss";
 
 const mainSection = document.querySelector(".main-section");
@@ -17,7 +15,7 @@ window.onload = function () {
 
 function startPage() {
     // toggleAllSections();
-    console.log("1");
+    // console.log("1");
     setTimeout(toggleAllSections, 1000);
 }
 
