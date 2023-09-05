@@ -176,36 +176,61 @@ module.hot.accept(reloadCSS);
 "use strict";
 
 require("../style/main.scss");
+/** Pages **/
 var mainSection = document.querySelector(".main-section");
-var graphs = document.querySelector(".main-graphs-widget");
-var calendar = document.querySelector(".main-calendar-widget");
 var subjects = document.querySelector(".subjects-section");
 var subjectDetail = document.querySelector(".subject-detail-section");
 var settings = document.querySelector(".settings-section");
+var navBar = document.querySelector(".nav-bar");
+// const graphs = document.querySelector(".main-graphs-widget");
+// const calendar = document.querySelector(".main-calendar-widget");
 
-// toggleAllSections();
+/** Buttons */
+// subjectsButton = document.querySelector(".subjects-icon");
 
 window.onload = function () {
+  // showSplash();
   startPage();
 };
+
+// function showSplash(){
+//     clearAll();
+//     setTimeout(()=>{
+//         showMainPage();
+//     });
+// }
+
 function startPage() {
-  // toggleAllSections();
-  // console.log("1");
-  setTimeout(toggleAllSections, 1000);
+  showMainPage();
 }
-function toggleAllSections() {
+function clearAll() {
+  navBar.classList.add("hide");
+  mainSection.classList.add("hide");
+  subjects.classList.add("hide");
+  subjectDetail.classList.add("hide");
+  settings.classList.add("hide");
+  // graphs.classList.toggle("hide");
+  // calendar.classList.toggle("hide");
+}
+
+function showMainPage() {
+  clearAll();
   mainSection.classList.toggle("hide");
-  settings.classList.toggle("hide");
-  graphs.classList.toggle("hide");
-  calendar.classList.toggle("hide");
-  subjects.classList.toggle("hide");
-  subjectDetail.classList.toggle("hide");
-  settings.classList.toggle("hide");
+  navBar.classList.toggle("hide");
 }
-specialButton.addEventListener("click", function () {
-  toggleAllSections();
-  //header.classList.add("hidden");
-});
+function showSubjectsPage() {
+  clearAll();
+  subjects.classList.toggle("hide");
+}
+function showSubjectDetailPage() {
+  clearAll();
+  subjectDetail.classList.toggle("hide");
+}
+
+// subjectsButton.addEventListener("click", () => {
+//     // showSubjectsPage();
+//     alert("Ay");
+// });
 },{"../style/main.scss":"style/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
