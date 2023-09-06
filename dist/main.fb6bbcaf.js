@@ -117,18 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/modulos.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.saludar = void 0;
-var saludar = function saludar() {
-  return 'Hola mundo desde un modulo';
-};
-exports.saludar = saludar;
-},{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -186,12 +175,98 @@ module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/main.js":[function(require,module,exports) {
 "use strict";
 
-var _modulos = require("./modulos.js");
 require("../style/main.scss");
-//console.log("Hola mundo desde parcel")
+/** Pages **/
+var mainSection = document.querySelector(".main-section");
+var subjects = document.querySelector(".subjects-section");
+var subjectDetail = document.querySelector(".subject-detail-section");
+var settings = document.querySelector(".settings-section");
+var navBar = document.querySelector(".nav-bar");
+// const graphs = document.querySelector(".main-graphs-widget");
+// const calendar = document.querySelector(".main-calendar-widget");
 
-console.log((0, _modulos.saludar)());
-},{"./modulos.js":"js/modulos.js","../style/main.scss":"style/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+/** Icons*/
+var subjectsIcon = document.querySelector(".subjects-icon");
+var homeIcon = document.querySelector(".home-icon");
+var settingsIcon = document.querySelector(".settings-icon");
+
+/** Buttons */
+var subjectButton = document.querySelector(".subjects-button");
+var homeButton = document.querySelector(".home-button");
+var firstSubject = document.querySelector(".first-subject");
+window.onload = function () {
+  // showSplash();
+  startPage();
+};
+
+// function showSplash(){
+//     clearAll();
+//     setTimeout(()=>{
+//         showMainPage();
+//     });
+// }
+
+function startPage() {
+  showMainPage();
+}
+function clearAll() {
+  navBar.classList.add("hide");
+  mainSection.classList.add("hide");
+  subjects.classList.add("hide");
+  subjectDetail.classList.add("hide");
+  settings.classList.add("hide");
+  // graphs.classList.toggle("hide");
+  // calendar.classList.toggle("hide");
+}
+
+function showMainPage() {
+  clearAll();
+  mainSection.classList.toggle("hide");
+  navBar.classList.toggle("hide");
+}
+function showSubjectsPage() {
+  clearAll();
+  subjects.classList.toggle("hide");
+  navBar.classList.toggle("hide");
+}
+
+// function showSubjectDetailPage(){
+//     clearAll();
+//     subjectDetail.classList.toggle("hide");
+// }
+
+function showFirstSubject() {
+  clearAll();
+  subjectDetail.classList.toggle("hide");
+  navBar.classList.toggle("hide");
+}
+function showSettingsPage() {
+  clearAll();
+  settings.classList.toggle("hide");
+  navBar.classList.toggle("hide");
+}
+subjectsIcon.addEventListener("click", function () {
+  showSubjectsPage();
+  //TODO Hover style for the subjectsIcon
+});
+
+firstSubject.addEventListener("click", function () {
+  showFirstSubject();
+});
+homeIcon.addEventListener("click", function () {
+  showMainPage();
+});
+homeButton.addEventListener("click", function () {
+  showMainPage();
+});
+subjectButton.addEventListener("click", function () {
+  //TODO: Fix the Redundancy between buttons
+  showSubjectsPage();
+});
+settingsIcon.addEventListener("click", function () {
+  showSettingsPage();
+});
+},{"../style/main.scss":"style/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -216,7 +291,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65027" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52663" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
