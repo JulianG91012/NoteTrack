@@ -185,9 +185,15 @@ var navBar = document.querySelector(".nav-bar");
 // const graphs = document.querySelector(".main-graphs-widget");
 // const calendar = document.querySelector(".main-calendar-widget");
 
-/** Buttons */
-// subjectsButton = document.querySelector(".subjects-icon");
+/** Icons*/
+var subjectsIcon = document.querySelector(".subjects-icon");
+var homeIcon = document.querySelector(".home-icon");
+var settingsIcon = document.querySelector(".settings-icon");
 
+/** Buttons */
+var subjectButton = document.querySelector(".subjects-button");
+var homeButton = document.querySelector(".home-button");
+var firstSubject = document.querySelector(".first-subject");
 window.onload = function () {
   // showSplash();
   startPage();
@@ -221,16 +227,45 @@ function showMainPage() {
 function showSubjectsPage() {
   clearAll();
   subjects.classList.toggle("hide");
-}
-function showSubjectDetailPage() {
-  clearAll();
-  subjectDetail.classList.toggle("hide");
+  navBar.classList.toggle("hide");
 }
 
-// subjectsButton.addEventListener("click", () => {
-//     // showSubjectsPage();
-//     alert("Ay");
-// });
+// function showSubjectDetailPage(){
+//     clearAll();
+//     subjectDetail.classList.toggle("hide");
+// }
+
+function showFirstSubject() {
+  clearAll();
+  subjectDetail.classList.toggle("hide");
+  navBar.classList.toggle("hide");
+}
+function showSettingsPage() {
+  clearAll();
+  settings.classList.toggle("hide");
+  navBar.classList.toggle("hide");
+}
+subjectsIcon.addEventListener("click", function () {
+  showSubjectsPage();
+  //TODO Hover style for the subjectsIcon
+});
+
+firstSubject.addEventListener("click", function () {
+  showFirstSubject();
+});
+homeIcon.addEventListener("click", function () {
+  showMainPage();
+});
+homeButton.addEventListener("click", function () {
+  showMainPage();
+});
+subjectButton.addEventListener("click", function () {
+  //TODO: Fix the Redundancy between buttons
+  showSubjectsPage();
+});
+settingsIcon.addEventListener("click", function () {
+  showSettingsPage();
+});
 },{"../style/main.scss":"style/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -256,7 +291,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64000" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65213" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

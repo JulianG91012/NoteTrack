@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/main.fb6bbcaf.css"></head>
     <body>
         <nav class="nav-bar">
+            <!-- Check if the subjects-icon class should be on this svg-->
             <svg xmlns="http://www.w3.org/2000/svg" class="icon-non-active icon icon-tabler icon-tabler-list-check subjects-icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M3.5 5.5l1.5 1.5l2.5 -2.5"></path>
@@ -21,13 +22,14 @@
                 <path d="M11 12l9 0"></path>
                 <path d="M11 18l9 0"></path>
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon-active icon icon-tabler icon-tabler-home-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Check if the subjects-icon class should be on this svg-->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-active icon icon-tabler icon-tabler-home-2 home-icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
                 <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
                 <path d="M10 12h4v4h-4z"></path>
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon-non-active icon icon-tabler icon-tabler-settings" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-non-active icon icon-tabler icon-tabler-settings settings-icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
                 <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
@@ -158,7 +160,8 @@
         </section>
         <section class="subjects-section ">
             <div class="header-banner">
-                <button class="main-widget-btn neumorph-effect">
+                <!-- TODO: How to use this button? -->
+                <button class="main-widget-btn neumorph-effect home-button">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M15 6l-6 6l6 6"></path>
@@ -171,7 +174,7 @@
             </div>
             <div class="subjects-zone">
                 <ul class="subjects-list">
-                    <li class="neumorph-effect">Integral Calculus</li>
+                    <li class="neumorph-effect first-subject">Integral Calculus</li>
                     <li class="neumorph-effect">Operating Systems</li>
                     <li class="neumorph-effect">Mobile Apps</li>
                     <li class="neumorph-effect">Operative Math</li>
@@ -221,9 +224,9 @@
             </svg>
             </button>
         </section>
-        <section class="subject-detail-section ">
+        <section class="subject-detail-section">
             <div class="header-banner">
-                <button class="main-widget-btn neumorph-effect">
+                <button class="main-widget-btn neumorph-effect subjects-button">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M15 6l-6 6l6 6"></path>
@@ -244,14 +247,14 @@
             </div>
             <div class="subjects-zone">
                 <ul class="subject-activities-names">
-                    <li class=" neumorph-effect">Simple integrals Exam</li>
-                    <li class=" neumorph-effect">Integrals Lvl 2</li>
-                    <li class=" neumorph-effect">Integrals Lvl 3</li>
+                    <li class="neumorph-effect">Simple integrals Exam</li>
+                    <li class="neumorph-effect">Integrals Lvl 2</li>
+                    <li class="neumorph-effect">Integrals Lvl 3</li>
                 </ul>
                 <ul class="subject-activities-notes">
-                    <li class=" neumorph-effect">3.4</li>
-                    <li class=" neumorph-effect">4.5</li>
-                    <li class=" neumorph-effect">4.7</li>
+                    <li class="neumorph-effect">3.4</li>
+                    <li class="neumorph-effect">4.5</li>
+                    <li class="neumorph-effect">4.7</li>
                 </ul>
                 <ul class="subjects-proyected-activities-list">
                     <li class="neumorph-effect">
